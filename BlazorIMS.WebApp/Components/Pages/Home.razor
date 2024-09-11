@@ -21,7 +21,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-       inventories =  (await ViewInventoriesUseCase.ExecuteAsync("whe")).ToList(); 
+       inventories =  (await ViewInventoriesUseCase.ExecuteAsync()).ToList(); 
     }
 }
 

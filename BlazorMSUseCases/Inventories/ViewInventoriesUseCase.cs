@@ -18,8 +18,8 @@ namespace BlazorIMS.UseCases.Inventories
             _inventoryrepo = inventoryrepo;
         }
         public async Task<IEnumerable<Inventory>> ExecuteAsync(string name = "")
-        {
+        { 
             return await _inventoryrepo.GetInventoriesByName(name);
-        } 
+        }
     }
 }

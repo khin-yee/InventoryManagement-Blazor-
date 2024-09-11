@@ -10,7 +10,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents();
 builder.Services.AddSingleton<IInventoryRepository, InventoryRepository>();
 builder.Services.AddTransient<IViewInventoriesUseCase, ViewInventoriesUseCase>();
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
